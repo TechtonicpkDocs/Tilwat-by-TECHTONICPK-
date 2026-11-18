@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="text_title">34sp</dimen>
+    <dimen name="text_heading">20sp</dimen>
+    <dimen name="text_body">17sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_quran">30sp</dimen>
+    <dimen name="text_quran_word">24sp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+</resources>

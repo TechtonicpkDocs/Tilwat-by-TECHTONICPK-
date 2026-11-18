@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default locale: Urdu. The app is Urdu-first. Every name here must also
+     exist in values-en/strings.xml. -->
+<resources>
+    <string name="app_name">تلاوت</string>
+    <string name="app_subtitle">تلاوت کی غلطیاں پکڑنے والا ساتھی</string>
+
+    <string name="mode_memorization">حفظ کا سیشن</string>
+    <string name="mode_memorization_desc">پہلے سے بتائی ہوئی عبارت پڑھیں، ایپ لفظ بہ لفظ ساتھ چلے گی</string>
+    <string name="mode_free">آزاد تلاوت</string>
+    <string name="mode_free_desc">کوئی بھی سورت پڑھیں، ایپ خود پہچانے گی کہ آپ کہاں ہیں</string>
+
+    <string name="label_surah">سورت منتخب کریں</string>
+    <string name="label_from_ayah">شروع کی آیت</string>
+    <string name="label_to_ayah">آخری آیت</string>
+    <string name="surah_spinner_format">%1$d — %2$s (%3$d آیات)</string>
+    <string name="surah_format">سورۃ %1$s</string>
+
+    <string name="btn_start_session">سیشن شروع کریں</string>
+    <string name="btn_history">تاریخ</string>
+    <string name="btn_about">تعارف</string>
+    <string name="btn_back">واپس</string>
+    <string name="btn_allow">اجازت دیں</string>
+    <string name="btn_cancel">منسوخ</string>
+    <string name="btn_yes">ہاں</string>
+    <string name="btn_no">نہیں</string>
+    <string name="btn_delete">حذف کریں</string>
+    <string name="btn_clear_all">سب صاف کریں</string>
+
+    <string name="offline_promise">آواز ڈیوائس سے باہر نہیں جاتی — مکمل آف لائن</string>
+    <string name="footer">powered by TECHTONICPK (03200989317)</string>
+
+    <string name="mic_permission_title">مائیک کی اجازت</string>
+    <string name="mic_permission_rationale">تلاوت سننے کے لیے مائیک کی اجازت چاہیے۔ آواز صرف اسی ڈیوائس پر سنی جاتی ہے، کہیں بھیجی نہیں جاتی۔</string>
+    <string name="mic_permission_denied">مائیک کی اجازت کے بغیر سیشن شروع نہیں ہو سکتا۔ اجازت دینے کے لیے سیٹنگز میں جائیں۔</string>
+    <string name="error_invalid_range">شروع کی آیت آخری آیت سے بڑی نہیں ہو سکتی</string>
+
+    <string name="session_title_mem">حفظ کا سیشن</string>
+    <string name="session_title_free">آزاد تلاوت</string>
+    <string name="status_loading">ماڈل لوڈ ہو رہا ہے…</string>
+    <string name="status_waiting">تیار ہے — پڑھنا شروع کریں</string>
+    <string name="status_acquiring">تلاش جاری ہے…</string>
+    <string name="status_locked">مقفل — آپ کی جگہ مل گئی</string>
+    <string name="status_ambiguous">غیر واضح — دوبارہ پڑھیں</string>
+    <string name="status_lost">گم شدہ — دوبارہ شروع کریں</string>
+    <string name="status_ended">سیشن ختم</string>
+
+    <string name="label_expected">متوقع لفظ</string>
+    <string name="label_observed">سنا گیا لفظ</string>
+    <string name="label_mic_level">آواز</string>
+    <string name="btn_end_session">سیشن ختم کریں</string>
+    <string name="free_recitation_hint">کوئی بھی سورت پڑھیں — ایپ خود آپ کی جگہ پہچان لے گی</string>
+
+    <string name="mistake_wrong_word">غلط لفظ</string>
+    <string name="mistake_omitted_word">چھوٹا ہوا لفظ</string>
+    <string name="mistake_added_word">اضافی لفظ</string>
+    <string name="mistake_skipped_passage">چھوٹی ہوئی عبارت</string>
+    <string name="mistake_unknown">نامعلوم غلطی</string>
+    <string name="mistakes_title">غلطیاں</string>
+    <string name="mistakes_empty">کوئی غلطی نہیں پکڑی گئی — ماشاءاللہ</string>
+    <string name="mistake_location_format">سورۃ %1$s، آیت %2$d، لفظ %3$d</string>
+    <string name="mistake_expected_format">درست: %1$s</string>
+    <string name="mistake_observed_format">سنا گیا: %1$s</string>
+
+    <string name="session_summary_format">مدت %1$s — کل غلطیاں %2$d</string>
+    <string name="session_saved">سیشن تاریخ میں محفوظ ہو گیا</string>
+
+    <string name="error_model_missing">ماڈل فائل نہیں ملی — ایپ دوبارہ انسٹال کریں</string>
+    <string name="error_engine_failed">انجن شروع نہیں ہو سکا — دوبارہ کوشش کریں</string>
+    <string name="error_mic_unavailable">مائیک دستیاب نہیں — ڈیوائس چیک کریں</string>
+    <string name="error_reference_failed">قرآنی متن لوڈ نہیں ہو سکا</string>
+
+    <string name="confirm_end_title">سیشن ختم کریں؟</string>
+    <string name="confirm_end_message">سیشن ختم کر کے تاریخ میں محفوظ کر دیا جائے گا۔</string>
+
+    <string name="history_title">تاریخ</string>
+    <string name="history_empty">ابھی کوئی سیشن محفوظ نہیں — پہلا سیشن شروع کریں</string>
+    <string name="history_mode_mem">حفظ</string>
+    <string name="history_mode_free">آزاد تلاوت</string>
+    <string name="history_passage_format">سورۃ %1$s — آیات %2$d تا %3$d</string>
+    <string name="history_free_label">آزاد تلاوت</string>
+    <string name="history_duration_format">%1$d:%2$02d</string>
+    <string name="history_mistakes_format">غلطیاں: %1$d</string>
+    <string name="history_detail_title">سیشن کی غلطیاں</string>
+    <string name="confirm_delete_title">سیشن حذف کریں؟</string>
+    <string name="confirm_delete_message">یہ سیشن اور اس کی غلطیاں ہمیشہ کے لیے ختم ہو جائیں گی۔</string>
+    <string name="confirm_clear_title">تمام تاریخ صاف کریں؟</string>
+    <string name="confirm_clear_message">تمام سیشن اور غلطیاں ہمیشہ کے لیے ختم ہو جائیں گی۔</string>
+    <string name="session_deleted">سیشن حذف ہو گیا</string>
+    <string name="history_cleared">تاریخ صاف ہو گئی</string>
+
+    <string name="about_title">تعارف</string>
+    <string name="about_version_format">ورژن %1$s</string>
+    <string name="about_credit">TECHTONICPK (محمد ریاض کھوڑ، لیہ، پاکستان) کی طرف سے</string>
+    <string name="about_desc">یہ ایپ آپ کی تلاوت سنتی ہے، لفظ بہ لفظ ساتھ چلتی ہے، اور حفظ کی غلطیاں — غلط لفظ، چھوٹا ہوا لفظ، اضافی لفظ، چھوٹی ہوئی عبارت — فوراً دکھاتی ہے۔ سب کچھ اسی ڈیوائس پر ہوتا ہے؛ آواز کہیں نہیں جاتی۔</string>
+    <string name="about_limits">حد: یہ ایپ لفظ کی غلطیاں پکڑتا ہے، باریک تجوید کے لیے استاد حتمی ہے</string>
+    <string name="about_attribution_title">اصل کام کا کریڈٹ</string>
+    <string name="about_attribution">انجن: تلاوہ (Tilawa @tilawa/core 1.0.0-rc.0، MIT لائسنس) — yazinsai\nماڈل: تلاوہ سننے والا ماڈل (spliced-clean-lite) — CC BY 4.0\nقرآنی متن: تنزیل (tanzil.net) کا عثمانی متن، بغیر کسی تبدیلی کے؛ آوازوں کی تبدیلی quran-transcript (MIT) سے، آوازوں کی فہرست muaalem (MIT) سے\nتربیتی آواز: tlog (CC-BY) اور قرآنی یونیورسل آیات / QUD (CC-BY)\nاسٹریمنگ Zipformer ڈھانچہ اور ONNX برآمد: k2-fsa icefall (Apache-2.0)\nONNX Runtime (MIT) — ڈیوائس پر حساب\nایپ کا اپنا کوڈ (یوزر انٹرفیس، اینڈرائیڈ جوڑ، سیشن تاریخ) TECHTONICPK کا ہے۔</string>
+    <string name="about_quran_note">قرآنی متن تنزیل سے لیا گیا عثمانی متن ہے، جسے یہ ایپ کبھی نہیں بدلتی۔</string>
+</resources>

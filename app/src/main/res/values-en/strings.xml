@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English mirror of values/strings.xml. Every name defined in the Urdu
+     file must exist here too. No apostrophes are used anywhere in this
+     file, so no escaping is needed. -->
+<resources>
+    <string name="app_name">Tilawa</string>
+    <string name="app_subtitle">Your companion for catching recitation mistakes</string>
+
+    <string name="mode_memorization">Memorization session</string>
+    <string name="mode_memorization_desc">Recite a passage you choose first; the app follows word by word</string>
+    <string name="mode_free">Free recitation</string>
+    <string name="mode_free_desc">Recite any surah; the app finds your place on its own</string>
+
+    <string name="label_surah">Choose a surah</string>
+    <string name="label_from_ayah">First ayah</string>
+    <string name="label_to_ayah">Last ayah</string>
+    <string name="surah_spinner_format">%1$d — %2$s (%3$d ayahs)</string>
+    <string name="surah_format">Surah %1$s</string>
+
+    <string name="btn_start_session">Start session</string>
+    <string name="btn_history">History</string>
+    <string name="btn_about">About</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_allow">Allow</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_clear_all">Clear all</string>
+
+    <string name="offline_promise">Audio never leaves the device — fully offline</string>
+    <string name="footer">powered by TECHTONICPK (03200989317)</string>
+
+    <string name="mic_permission_title">Microphone permission</string>
+    <string name="mic_permission_rationale">Microphone access is needed to hear the recitation. Audio is heard only on this device and is never sent anywhere.</string>
+    <string name="mic_permission_denied">A session cannot start without microphone permission. Please allow it in Settings.</string>
+    <string name="error_invalid_range">The first ayah cannot be after the last ayah</string>
+
+    <string name="session_title_mem">Memorization session</string>
+    <string name="session_title_free">Free recitation</string>
+    <string name="status_loading">Loading the model…</string>
+    <string name="status_waiting">Ready — start reciting</string>
+    <string name="status_acquiring">Listening for your place…</string>
+    <string name="status_locked">Locked on — found your place</string>
+    <string name="status_ambiguous">Unclear — please repeat</string>
+    <string name="status_lost">Lost — please restart the passage</string>
+    <string name="status_ended">Session ended</string>
+
+    <string name="label_expected">Expected word</string>
+    <string name="label_observed">Heard word</string>
+    <string name="label_mic_level">Voice</string>
+    <string name="btn_end_session">End session</string>
+    <string name="free_recitation_hint">Recite any surah — the app will find your place on its own</string>
+
+    <string name="mistake_wrong_word">Wrong word</string>
+    <string name="mistake_omitted_word">Omitted word</string>
+    <string name="mistake_added_word">Added word</string>
+    <string name="mistake_skipped_passage">Skipped passage</string>
+    <string name="mistake_unknown">Unknown mistake</string>
+    <string name="mistakes_title">Mistakes</string>
+    <string name="mistakes_empty">No mistakes caught — well done</string>
+    <string name="mistake_location_format">Surah %1$s, ayah %2$d, word %3$d</string>
+    <string name="mistake_expected_format">Correct: %1$s</string>
+    <string name="mistake_observed_format">Heard: %1$s</string>
+
+    <string name="session_summary_format">Duration %1$s — total mistakes %2$d</string>
+    <string name="session_saved">Session saved to history</string>
+
+    <string name="error_model_missing">Model file missing — please reinstall the app</string>
+    <string name="error_engine_failed">Engine could not start — please try again</string>
+    <string name="error_mic_unavailable">Microphone unavailable — please check the device</string>
+    <string name="error_reference_failed">Quran text could not be loaded</string>
+
+    <string name="confirm_end_title">End the session?</string>
+    <string name="confirm_end_message">The session will be ended and saved to history.</string>
+
+    <string name="history_title">History</string>
+    <string name="history_empty">No sessions saved yet — start your first session</string>
+    <string name="history_mode_mem">Memorization</string>
+    <string name="history_mode_free">Free recitation</string>
+    <string name="history_passage_format">Surah %1$s — ayahs %2$d to %3$d</string>
+    <string name="history_free_label">Free recitation</string>
+    <string name="history_duration_format">%1$d:%2$02d</string>
+    <string name="history_mistakes_format">Mistakes: %1$d</string>
+    <string name="history_detail_title">Session mistakes</string>
+    <string name="confirm_delete_title">Delete this session?</string>
+    <string name="confirm_delete_message">This session and its mistakes will be permanently deleted.</string>
+    <string name="confirm_clear_title">Clear all history?</string>
+    <string name="confirm_clear_message">All sessions and mistakes will be permanently deleted.</string>
+    <string name="session_deleted">Session deleted</string>
+    <string name="history_cleared">History cleared</string>
+
+    <string name="about_title">About</string>
+    <string name="about_version_format">Version %1$s</string>
+    <string name="about_credit">By TECHTONICPK (Muhammad Riaz Khour, Layyah, Pakistan)</string>
+    <string name="about_desc">This app listens to your recitation, follows along word by word, and shows memorization mistakes at once — wrong word, omitted word, added word, skipped passage. Everything happens on this device; audio never leaves it.</string>
+    <string name="about_limits">Limit: this app catches word-level mistakes; for fine tajweed, a teacher is final.</string>
+    <string name="about_attribution_title">Credit for the original work</string>
+    <string name="about_attribution">Engine: Tilawa (@tilawa/core 1.0.0-rc.0, MIT License) by yazinsai — github.com/yazinsai/tilawa\nModel: Tilawa listener model (spliced-clean-lite) — CC BY 4.0\nQuran text: Uthmani text from Tanzil (tanzil.net), reproduced verbatim; phonemization by quran-transcript (MIT); phoneme inventory from muaalem (MIT)\nTraining audio: tlog (CC-BY) and Quranic Universal Ayahs / QUD (CC-BY)\nStreaming Zipformer architecture and ONNX export: k2-fsa icefall (Apache-2.0)\nONNX Runtime (MIT) — on-device inference\nApp code (UI, Android integration, session history) by TECHTONICPK (Muhammad Riaz Khour, Layyah, Pakistan).</string>
+    <string name="about_quran_note">The Quran text is the Uthmani text from Tanzil, which this app never alters.</string>
+</resources>

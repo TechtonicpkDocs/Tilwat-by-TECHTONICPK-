@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand: restrained dark green + gold. -->
+    <color name="white">#FFFFFF</color>
+    <color name="green_primary">#14532D</color>
+    <color name="green_dark">#0B3D1E</color>
+    <color name="green_light">#E8F5E9</color>
+    <color name="gold">#C9A227</color>
+    <color name="gold_light">#F5E9C8</color>
+    <color name="background">#FAF7F0</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="divider">#E0DCCF</color>
+
+    <!-- Current-word highlight in the Mushaf display. -->
+    <color name="highlight_current">#FFF9C4</color>
+
+    <!-- Mistake classes: wrong word red, omitted amber, added blue,
+         skipped passage purple. -->
+    <color name="mistake_red">#C62828</color>
+    <color name="mistake_red_bg">#FDECEA</color>
+    <color name="mistake_amber">#E65100</color>
+    <color name="mistake_amber_bg">#FFF3E0</color>
+    <color name="mistake_blue">#1565C0</color>
+    <color name="mistake_blue_bg">#E3F2FD</color>
+    <color name="mistake_purple">#6A1B9A</color>
+    <color name="mistake_purple_bg">#F3E5F5</color>
+</resources>

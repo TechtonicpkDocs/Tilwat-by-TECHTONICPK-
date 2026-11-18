@@ -1,0 +1,55 @@
+name: Build Debug APK
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Restore committed debug keystore
+        # Stable debug signing: ONE debug keystore for all CI runs, committed
+        # at repo root as debug.keystore (base64 text). DEBUG ONLY, standard
+        # debug credentials (android/android/androiddebugkey).
+        run: |
+          mkdir -p ~/.android
+          base64 -d debug.keystore > ~/.android/debug.keystore
+          keytool -list -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey | grep -E 'Alias|SHA256'
+
+      - name: Download Tilawa listener model (verified)
+        # The ONNX model (spliced-clean-lite, 24,650,054 bytes) is NOT
+        # committed to the repo — it is downloaded here at build time from
+        # the upstream host and verified by SHA-256 before the build, so
+        # the APK always bundles exactly the published model. If the hash
+        # does not match, the build fails here rather than shipping a
+        # wrong model.
+        run: |
+          curl -fsSL -o app/src/main/assets/model.onnx \
+            https://tilawa.dev/v1/models/spliced-clean-lite/1-int8/model.onnx
+          echo "4974de78d3c35d2542e7a24d99b747e1160d6e31e366fb68492b74a789890f1b  app/src/main/assets/model.onnx" | sha256sum -c -
+          ls -l app/src/main/assets/model.onnx
+
+      - name: Build debug APK
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: tilwat-by-techtonicpk-v1.0.0-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error

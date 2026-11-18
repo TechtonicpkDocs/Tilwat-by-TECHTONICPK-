@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Session history is local-only: never auto-backed up, never silently
+     restored. (allowBackup is already false in the manifest; this is the
+     fleet-standard belt-and-braces rule.) -->
+<full-backup-content>
+    <exclude domain="database" path="." />
+</full-backup-content>

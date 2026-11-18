@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.apk
+*.aab
+# The ONNX model is downloaded by CI (verified by SHA-256) and is NOT
+# committed. A local copy for development builds goes here and must never
+# be committed.
+app/src/main/assets/model.onnx

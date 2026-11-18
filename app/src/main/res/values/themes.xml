@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme on purpose: the palette is fixed light colours, so a
+         forced light theme keeps every screen readable on every device. -->
+    <style name="Theme.Tilawa" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryContainer">@color/green_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorSecondaryContainer">@color/gold_light</item>
+        <item name="colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="android:textViewStyle">@style/Widget.Tilawa.TextView</item>
+        <item name="materialButtonStyle">@style/Widget.Tilawa.Button</item>
+        <item name="radioButtonStyle">@style/Widget.Tilawa.RadioButton</item>
+    </style>
+
+    <!-- Jameel Noori Nastaleeq is the default UI font (Urdu-first). Quranic
+         Arabic views override this with Amiri in their layouts. -->
+    <style name="Widget.Tilawa.TextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Widget.Tilawa.Button" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="backgroundTint">@color/green_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+    <style name="Widget.Tilawa.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="android:textColor">@color/green_primary</item>
+        <item name="strokeColor">@color/green_primary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+    <style name="Widget.Tilawa.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="buttonTint">@color/green_primary</item>
+    </style>
+
+    <style name="TextAppearance.Tilawa.Title" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@color/green_primary</item>
+    </style>
+
+    <style name="TextAppearance.Tilawa.Heading" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+        <item name="android:textSize">@dimen/text_heading</item>
+        <item name="android:textColor">@color/green_primary</item>
+    </style>
+
+    <!-- ALL Quranic Arabic text uses Amiri, never Jameel. -->
+    <style name="TextAppearance.Tilawa.Quran" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/amiri_regular</item>
+        <item name="android:textSize">@dimen/text_quran</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Tilawa.QuranWord" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/amiri_regular</item>
+        <item name="android:textSize">@dimen/text_quran_word</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>

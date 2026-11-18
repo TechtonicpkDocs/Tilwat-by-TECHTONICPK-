@@ -1,0 +1,29 @@
+NOTICE — Tilwat by TECHTONICPK (Tilawa Native)
+
+This app's recitation engine is a Kotlin port of Tilawa (@tilawa/core),
+and it bundles Tilawa's model and Quran reference data. The works below
+belong to their creators; their credit is kept here and on the app's
+About screen, never stripped.
+
+- Tilawa (@tilawa/core 1.0.0-rc.0) — https://github.com/yazinsai/tilawa
+  MIT License. Copyright (c) yazinsai. The engine code is ported from
+  Tilawa's MIT-licensed engine with attribution; the port does not claim
+  the engine as original work.
+- Tilawa listener model (spliced-clean-lite) — CC BY 4.0.
+  Model: https://tilawa.dev/v1/models/spliced-clean-lite/1-int8/model.onnx
+  SHA-256: 4974de78d3c35d2542e7a24d99b747e1160d6e31e366fb68492b74a789890f1b
+- Quran reference data (ref-v2.json) — Uthmani Quran text from Tanzil
+  (https://tanzil.net), reproduced verbatim; phonemization by
+  quran-transcript (obadx/quran-transcript 0.6.4, MIT); phoneme inventory
+  from muaalem (obadx/muaalem-model-v3_2, MIT).
+- Training/evaluation audio: tlog (tarteel-ai/tlog, CC-BY) and Quranic
+  Universal Ayahs / QUD (QUD-Technologies/quranic-universal-ayahs, CC-BY).
+- Streaming Zipformer architecture, training recipe and ONNX export:
+  k2-fsa icefall (Apache-2.0).
+- ONNX Runtime (microsoft/onnxruntime, MIT) — on-device inference.
+
+The app code written for this project (UI, Android integration, session
+history) is by TECHTONICPK (Muhammad Riaz Khour, Layyah, Pakistan).
+
+Quranic text: the Uthmani text in ref-v2.json is reproduced verbatim from
+Tanzil. It is never altered by this app.
